@@ -8,7 +8,19 @@
 </head>
 <body>
 
+<div id="content">
+  <% flash.each do |key, value| %>
+    <div class="jumbotron" >
+      <div class ="row">
+        <div class="span8">
+          <div class ="flash-message" id= "<%=key %>"><%= value %></div>
+        </div>
+      </div>
+    </div>
+  <% end if @game && !@game.error_message.empty? %>
+
 <%= yield %>
+</div>
 
 </body>
 </html>

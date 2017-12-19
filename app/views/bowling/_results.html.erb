@@ -1,0 +1,29 @@
+<div class="jumbotron">
+  <table class="table table-striped table-bordered table-dark table-hover" id="results" >
+    <tr>
+      <td class="frame_cols">Frame:</td>
+      <%== frame_cells %>
+      <td>
+        Final Score
+      </td>
+    </tr>
+    <tr>
+      <td class="try1_cols">
+        try1:
+      <%== try1_cells %>
+      </td>
+    </tr>
+    <tr>
+      <td class="try2_cols">
+        try2: <%== try2_cells %>
+      </td>
+    </tr>
+    <tr>
+      <td class="Score_cols">Score:</td>
+      <%== score_cells%>
+      <td class="total">
+        <%= @game.total %>
+      </td>
+    </tr>
+  </table>
+</div>
